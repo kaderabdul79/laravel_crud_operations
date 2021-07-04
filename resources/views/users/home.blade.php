@@ -10,11 +10,12 @@
   <div>
       {{-- <!-- @csrf; --> --}}
       <h2>Welcome</h2>
-      <h2><a href="">User Details</a></h2>
-      <h2><a href="">Create New User</a></h2>
-      <h2><a href="">View User</a></h2>
-      <h2><a href="">Edit User</a></h2>
-      <h2><a href="">Delete User</a></h2>
+      <hr>
+      <h2><a href="">View My Profile</a></h2>
+      <h2><a href="">Edit My Profile</a></h2>
+      <h2><a href="">Delete My Profile</a></h2>
+      <hr>
+      <h2><a href="{{ route('home.createUser') }}">Create New User</a></h2>
       <h2><a href="">Logout</a></h2>
   </div>
  </body>
