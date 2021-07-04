@@ -15,6 +15,6 @@ class signupController extends Controller
         $cpassword = $req->cpassword;
         $email = $req->email;
         $address = $req->address;
-        return redirect('/login');
+        return redirect()->route('login.LoginVerify');
     }
 }

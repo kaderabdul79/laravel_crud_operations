@@ -13,7 +13,7 @@ class loginController extends Controller
        $a = $req->username;
        $b = $req->password;
         if($a == $b){
-            return redirect('/home');
+            return redirect()->route('home.goHome');
         } echo $error;
         //  return view('layout.login');
     }

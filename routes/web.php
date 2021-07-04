@@ -9,6 +9,6 @@ use App\Http\Controllers\homeController;
 
 Route::get('/',[signupController::class, 'signup']);
 Route::post('/',[signupController::class, 'signupValidate']);
-Route::get('/login',[loginController::class, 'Login']);
-Route::post('/login',[loginController::class, 'LoginVerify']);
-Route::get('/home',[homeController::class, 'goHome']);
+Route::get('/login',[loginController::class, 'Login'])->name('login.Login');
+Route::post('/login',[loginController::class, 'LoginVerify'])->name('login.LoginVerify');
+Route::get('/home',[homeController::class, 'goHome'])->name('home.goHome');
