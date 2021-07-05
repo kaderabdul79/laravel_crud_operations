@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Validator;
 
 class loginController extends Controller
 {
@@ -10,10 +11,13 @@ class loginController extends Controller
          return view('layout.login');
     }
     public function LoginVerify(Request $req){
-       $a = $req->username;
-       $b = $req->password;
-        if($a == $b){
-            return redirect()->route('home.goHome');
-        } echo $error;
+       $email = $req->email;
+       $password = $req->password;
+       $getErrors = Validator::make($req->all(), ['email' => 'required',
+                                'password' => 'required']);
+       if($getErrors->fails()){
+         return redirect('/login')->with('errors', $getErrors->errors()); 
+       }
+        return redirect()->route('home.goHome');
     }
 }

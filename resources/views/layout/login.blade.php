@@ -29,6 +29,9 @@
        </tr>
      </table>
      </form>
+     @foreach ($errors->all() as $err)
+         <h2>{{ $err }}</h2>
+     @endforeach
  </body>
  </html>
  

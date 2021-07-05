@@ -39,6 +39,9 @@
            <td></td>
            <td><input type="submit" name="submit" value="Signup" id=""></td>
        </tr>
+       @foreach ($errors->all() as $err)
+           <h2>{{ $err }}</h2>
+       @endforeach
      </table>
      </form>
  </body>
