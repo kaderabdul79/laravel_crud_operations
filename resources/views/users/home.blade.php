@@ -16,7 +16,10 @@
       <h2><a href="">Delete My Profile</a></h2>
       <hr>
       <h2><a href="{{ route('home.createUser') }}">Create New User</a></h2>
-      <h2><a href="">Logout</a></h2>
+      
+     
+      <h2><a href="{{ route('home.allUsersList') }}">All Users List</a></h2>
+      <h2><a href="{{ route('louout.Logout') }}">Logout</a></h2>
   </div>
  </body>
  </html>

@@ -20,8 +20,8 @@
            <td><input type="password" name="password" id=""></td>
        </tr>
        <tr>
-           <td>Do you have a Account?</td>
-           <td><a href="/login">Login</a></td>
+           <td>Create New Account?</td>
+           <td><a href="/">Signup</a></td>
        </tr>
        <tr>
            <td></td>

@@ -15,6 +15,5 @@ class loginController extends Controller
         if($a == $b){
             return redirect()->route('home.goHome');
         } echo $error;
-        //  return view('layout.login');
     }
 }
