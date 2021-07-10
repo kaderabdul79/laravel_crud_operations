@@ -17,3 +17,5 @@ Route::post('/create/user',[homeController::class, 'newUserVerify'])->name('home
 Route::get('/users/list',[homeController::class, 'allUsersList'])->name('home.allUsersList');
 Route::get('/logout',[logoutController::class, 'Logout'])->name('louout.Logout');
 Route::post('/logout',[loginController::class, 'LoginVerify'])->name('login.LoginVerify');
+
+Route::get('/myprofile',[homeController::class, 'myProfile'])->name('home.myProfile');

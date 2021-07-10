@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Details All Users</title>
+     <title>My Profile</title>
  </head>
  <body>
      <table border="1">
@@ -15,16 +15,14 @@
            <th>Address</th>
            <th>Action</th>
        </tr>
-       @foreach ($alluserlist as $user)
-           
-       
        <tr>
-           <td>{{$user->name}}</td>
-           <td>{{$user->email}}</td>
-           <td>{{$user->address}}</td>
-           <td><a href="">View</a> | <a href="">Update</a> | <a href="">Delete</a></td>
+           {{-- <td>{{ $name }}</td>
+           <td>{{ $email }}</td></td>
+           <td>{{ $address}}</td> {{ var_dump($course) }}
+           {{ $course[0] }} --}}
+           <td><a href="">Update</a> | <a href="">Delete</a></td>
        </tr>
-       @endforeach
+       
      </table>
  </body>
  </html>
